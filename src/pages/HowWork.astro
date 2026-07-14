@@ -1,0 +1,60 @@
+---
+import {MapPin, CalendarCheck2, CircleCheckBig} from "lucide-astro"
+---
+
+<section id="howWork" class="felx flex-col justify-center items-center mt-8">
+    <div class="flex flex-col justify-center items-center gap-4 text-center">
+        <span class="text-secondary font-medium text-2xl"> Cómo funciona </span>
+        <h1 class="text-5xl font-medium">Reservar nuca fue tan fácil</h1>
+    </div>
+
+    <div class="flex justify-center items-center gap-4 mt-8">
+
+        <div class="flex flex-col justify-center items-center">
+            
+            <div class="relative p-4 flex flex-col w-min">
+                <i class="p-3 bg-gray-200 rounded-md text-primary">
+                    <MapPin size={40}/>
+                </i>
+                <i class="absolute bg-primary h-8 w-8 text-surface right-0 top-0 rounded-4xl flex items-center justify-center font-normal">1</i>
+            </div>
+
+            <div class="flex flex-col justify-center items-center text-center gap-2">
+                <span class="text-4xl">Encuentra un lugar</span>
+
+                <p class="text-secondary-text">Busca por categoría, ubicación o nombre entre cientos de establecimientos verificados</p>
+            </div>
+        </div>
+            
+        <div class="flex flex-col justify-center items-center">
+            <div class="relative p-4 flex flex-col w-min">
+                <i class="p-3 bg-gray-200 rounded-md text-secondary">
+                    <CalendarCheck2 size={40}/>
+                </i>
+                <i class="absolute bg-secondary h-8 w-8 text-surface right-0 top-0 rounded-4xl flex items-center justify-center font-normal">2</i>
+            </div>
+            
+            <div class="flex flex-col justify-center items-center text-center gap-2">
+                <span class="text-4xl">Elige tu horario</span>
+
+                <p class="text-secondary-text">Consulta la disponibilidad en tiempo real y selecciona el horario que más te convenga.</p>
+            </div>
+        </div>
+
+        <div class="flex flex-col justify-center items-center">
+            <div class="relative p-4 flex flex-col w-min">
+                <i class="p-3 bg-gray-200 rounded-md text-highlight">
+                    <CircleCheckBig size={40}/>
+                </i>
+                <i class="absolute bg-highlight h-8 w-8 text-surface right-0 top-0 rounded-4xl flex items-center justify-center font-normal">3</i>
+            </div>
+            
+            <div class="flex flex-col justify-center items-center text-center gap-2">
+                <span class="text-4xl">Confirma y listo</span>
+
+                <p class="text-secondary-text">Recibe la confirmación al instante y un recordatorio antes de tu cita.</p>
+            </div>
+        </div>
+
+    </div>
+</section>

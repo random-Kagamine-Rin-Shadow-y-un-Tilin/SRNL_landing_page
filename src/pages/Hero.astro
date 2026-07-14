@@ -1,0 +1,37 @@
+---
+import { Utensils, Scissors, Flower, SoapDispenserDroplet, Sparkles } from "lucide-astro";
+---
+
+<section id="hero" class="flex flex-col justify-center items-center p-4 gap-4">
+    <div class="rounded-3xl bg-surface pl-4 pr-4 w-max border-highlight border-1 text-primary font-medium flex items-center gap-2">
+        <Sparkles size={15}/>
+        <span>Más de 2,000 negocios ya reservan aquí</span>
+    </div>
+
+    <div class="flex flex-col">
+        <span class="text-6xl font-medium text-center">Agenda tu próxima cita</span>
+        <br>
+        <span class="text-6xl font-medium text-center">en segundos</span>
+    </div>
+
+    <span class="text-secondary-text text-center">Restaurantes, peluquerías, spas y más — todo en un solo lugar, sin llamadas ni esperas.</span>
+
+    <div class="flex gap-4">
+        <div class="flex flex-col items-center justify-center gap-3">
+            <i class="bg-highlight border-secondary-text p-3 border-1 rounded-md">  <Utensils size={40}/> </i>
+            <span class=" font-medium">Restaurantes</span>
+        </div>
+        <div class="flex flex-col items-center justify-center gap-3">
+            <i class="bg-secondary border-secondary-text p-3 border-1 rounded-md"> <Scissors size={40} class="text-background" /> </i>
+            <span class=" font-medium">Peluquerías</span>
+        </div>
+        <div class="flex flex-col items-center justify-center gap-3">
+            <i class="bg-primary border-secondary-text p-3 border-1 rounded-md"> <Flower size={40} class="text-surface" /> </i>
+            <span class=" font-medium">Spa</span>
+        </div>
+        <div class="flex flex-col items-center justify-center gap-3">
+            <i class="bg-surface border-secondary-text p-3 border-1 rounded-md"> <SoapDispenserDroplet size={40} class="text-primary"/> </i>
+            <span class=" font-medium">Uñas</span>
+        </div>
+    </div>
+</section>
