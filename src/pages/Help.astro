@@ -1,6 +1,154 @@
 ---
 
 ---
-<section id="help">
-    Esta es la seccion de ayuda jejejjej
+<section id="help" class="flex flex-col justify-center items-center p-8 gap-8">
+    <div class="flex flex-col justify-center items-center gap-3">
+        <span class="text-secondary font-medium text-2xl">AYUDA</span>
+        <h1 class="font-medium text-5xl">Preguntas frecuentes</h1>
+    </div>
+
+    <div class="flex flex-col gap-4">
+        <div class="faq rounded-3xl border border-gray-300 p-6 transition-colors duration-300">
+            <button
+                class="faq-button flex w-full items-center justify-between text-left"
+            >
+                <span class="text-xl font-semibold">
+                    ¿Cuánto cuesta usar la app para agendar citas?
+                </span>
+
+                <span class="faq-icon text-3xl text-highlight transition-transform duration-300">
+                    +
+                </span>
+            </button>
+
+            <div
+                class="faq-content overflow-hidden max-h-0 transition-all duration-300 ease-in-out"
+            >
+                <p class="pt-4 text-secondary-text">
+                    Para ti como usuario, agendar es completamente gratis. Solo los negocios pagan
+                     una suscripción para aparecer en la plataforma y gestionar su calendario.
+                </p>
+            </div>
+        </div>
+
+        <div class="faq rounded-3xl border border-gray-300 p-6 transition-colors duration-300">
+            <button
+                class="faq-button flex w-full items-center justify-between text-left"
+            >
+                <span class="text-xl font-semibold">
+                    ¿Puedo cancelar o cambiar una cita ya agendada?
+                </span>
+
+                <span class="faq-icon text-3xl text-highlight transition-transform duration-300">
+                    +
+                </span>
+            </button>
+
+            <div
+                class="faq-content overflow-hidden max-h-0 transition-all duration-300 ease-in-out"
+            >
+                <p class="pt-4 text-secondary-text">
+                    Sí, desde la sección "Mis citas" puedes reprogramar o cancelar
+                    hasta con 2 horas de anticipación, sin costo.
+                </p>
+            </div>
+        </div>
+
+        <div class="faq rounded-3xl border border-gray-300 p-6 transition-colors duration-300">
+            <button
+                class="faq-button flex w-full items-center justify-between text-left"
+            >
+                <span class="text-xl font-semibold">
+                    ¿Cómo registro mi negocio en la plataforma?
+                </span>
+
+                <span class="faq-icon text-3xl text-highlight transition-transform duration-300">
+                    +
+                </span>
+            </button>
+
+            <div
+                class="faq-content overflow-hidden max-h-0 transition-all duration-300 ease-in-out"
+            >
+                <p class="pt-4 text-secondary-text">
+                    Da clic en "Registra tu negocio", elige tu plan y completa los datos de tu
+                    establecimiento. En menos de 10 minutos tu calendario ya está listo para 
+                    recibir reservas.
+                </p>
+            </div>
+        </div>
+
+        <div class="faq rounded-3xl border border-gray-300 p-6 transition-colors duration-300">
+            <button
+                class="faq-button flex w-full items-center justify-between text-left"
+            >
+                <span class="text-xl font-semibold">
+                    ¿Qué pasa si no llego a mi cita?
+                </span>
+
+                <span class="faq-icon text-3xl text-highlight transition-transform duration-300">
+                    +
+                </span>
+            </button>
+
+            <div
+                class="faq-content overflow-hidden max-h-0 transition-all duration-300 ease-in-out"
+            >
+                <p class="pt-4 text-secondary-text">
+                    Si no puedes asistir, cancela con al menos 2 horas de anticipación para liberar
+                    el horario. Las inasistencias repetidas sin aviso pueden limitar temporalmente 
+                    capacidad de reservar.
+                </p>
+            </div>
+        </div>
+
+        <div class="faq rounded-3xl border border-gray-300 p-6 transition-colors duration-300">
+            <button
+                class="faq-button flex w-full items-center justify-between text-left"
+            >
+                <span class="text-xl font-semibold">
+                    ¿La app funciona en todo México?
+                </span>
+
+                <span class="faq-icon text-3xl text-highlight transition-transform duration-300">
+                    +
+                </span>
+            </button>
+
+            <div
+                class="faq-content overflow-hidden max-h-0 transition-all duration-300 ease-in-out"
+            >
+                <p class="pt-4 text-secondary-text">
+                    Por ahora estamos activos en las principales ciudades y seguimos sumando 
+                    negocios cada semana. Si tu ciudad todavía no aparece, puedes dejarnos tu 
+                    correo para avisarte en cuanto lleguemos.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <span>¿No encuentras tu respuesta? </span> 
+        <a class="text-secondary" href="#">Escribenos</a>
+    </div>
 </section>
+
+<script>
+    document.querySelectorAll(".faq").forEach((faq) => {
+        const button = faq.querySelector(".faq-button");
+        const content = faq.querySelector(".faq-content");
+        const icon = faq.querySelector(".faq-icon");
+
+        button.addEventListener("click", () => {
+            if (content.style.maxHeight) {
+                // Cerrar
+                content.style.maxHeight = null;
+                icon.textContent = "+";
+            } else {
+                // Abrir
+                content.style.maxHeight = content.scrollHeight + "px";
+                icon.textContent = "−";
+            }
+        });
+    });
+</script>
