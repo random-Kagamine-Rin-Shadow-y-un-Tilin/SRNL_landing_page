@@ -1,0 +1,120 @@
+---
+import {Check} from 'lucide-astro'
+---
+<section id="prices" class="p-8 min-h-screen flex flex-col items-center gap-5">
+    <span class="text-secondary text-2xl">Precios</span>
+
+    <h1 class="text-5xl">Un plan para cada tamaño de negocio</h1>
+    <span class="text-secondary-text">Para tus clientes agendar siempre es gratis.</span>
+
+    <div class="flex justify-center items-center gap-4">
+
+        <div class="flex flex-col gap-4 p-4 bg-card rounded-md border-secondary-text border-1">
+            <div class="flex flex-col">
+                <span class="font-medium">Básico</span>
+                <span class="text-secondary-text">Para empezar sin complicarte</span>
+            </div>
+
+            <div>
+                <span class="text-foreground text-4xl font-medium">$0</span>
+                <span class="text-secondary-text">/mes</span>
+            </div>
+
+            <div class="flex flex-col">
+                <div class="flex items-center gap-2">
+                    <Check class="text-green-600" size={18}/>
+                    <span>Hasta 30 citas/mes</span>
+                </div>
+
+                <div class="flex items-center gap-2">
+                    <Check class="text-green-600" size={18}/>
+                    <span>Calendario básico</span>
+                </div>
+
+                <div class="flex items-center gap-2">
+                    <Check class="text-green-600" size={18}/>
+                    <span>Recordatorios por correo</span>
+                </div>
+            </div>
+
+            <a href="#" class="font-medium pr-2 pl-2 pb-1 pt-1 rounded-md border-1 border-secondary-text bg-surface text-center">Empezar gratis</a>
+        </div>
+
+        <div class="relative p-3">
+            <span class="absolute font-medium top-0 left-1/2 -translate-x-1/2 rounded-4xl bg-primary text-background pl-2 pr-2 pt-1 pb-1">
+                Mas popular
+            </span>
+
+            <div class="flex flex-col gap-4 p-4 bg-foreground rounded-md border-black border-1">
+            <div class="flex flex-col">
+                <span class="font-medium text-background">Profesional</span>
+                <span class="text-secondary-text">Para negocios en crecimiento</span>
+            </div>
+
+            <div>
+                <span class="text-background text-4xl font-medium">$399</span>
+                <span class="text-secondary-text">/mes</span>
+            </div>
+
+            <div class="flex flex-col">
+                <div class="flex items-center gap-2">
+                    <Check class="text-highlight" size={18}/>
+                    <span class="text-background">Citas ilimitadas</span>
+                </div>
+
+                <div class="flex items-center gap-2">
+                    <Check class="text-highlight" size={18}/>
+                    <span class="text-background">Recordatorios por WhatsApp y SMS</span>
+                </div>
+
+                <div class="flex items-center gap-2">
+                    <Check class="text-highlight" size={18}/>
+                    <span class="text-background">Panel de métricas</span>
+                </div>
+
+                <div class="flex items-center gap-2">
+                    <Check class="text-highlight" size={18}/>
+                    <span class="text-background">Hasta 3 sucursales</span>
+                </div>
+            </div>
+
+            <a href="#" class="font-medium pr-2 pl-2 pb-1 pt-1 rounded-md border-1 border-secondary-text bg-primary text-background text-center">
+                Elegir profesinal
+            </a>
+        </div>
+        </div>
+
+        <div class="flex flex-col gap-4 p-4 bg-card rounded-md border-secondary-text border-1">
+            <div class="flex flex-col">
+                <span class="font-medium">Negocio</span>
+                <span class="text-secondary-text">Para cadenas y frnaquicias</span>
+            </div>
+
+            <div>
+                <span class="text-foreground text-4xl font-medium">A medida</span>
+            </div>
+
+            <div class="flex flex-col">
+                <div class="flex items-center gap-2">
+                    <Check class="text-green-600" size={18}/>
+                    <span>Sucursales ilimitadas</span>
+                </div>
+
+                <div class="flex items-center gap-2">
+                    <Check class="text-green-600" size={18}/>
+                    <span>Acceso a API</span>
+                </div>
+
+                <div class="flex items-center gap-2">
+                    <Check class="text-green-600" size={18}/>
+                    <span>Soporte dedicado</span>
+                </div>
+            </div>
+
+            <a href="#" class="font-medium pr-2 pl-2 pb-1 pt-1 rounded-md border-1 border-secondary-text bg-surface text-center">
+                Hablar con ventas
+            </a>
+        </div>
+
+    </div>
+</section>

@@ -1,0 +1,46 @@
+---
+import {CircleCheckBig, User} from 'lucide-astro'
+---
+<section id="forBussines" class="mt-8 bg-foreground p-8 flex gap-8 justify-center items-center">
+    <div class="flex flex-col gap-8 basis-1/2">
+        <span class="text-highlight text-2xl">Para negocios</span>
+
+        <span class="text-surface text-3xl">Llena tu agenda, no tu bandeja de WhatsApp</span>
+
+        <p class="text-surface">Registra tu restaurante, salón o spa y deja que tus clientes reserven solos, 24/7 — tú solo confirmas.</p>
+
+        <div class="flex flex-col gap-6 text-surface ml-4">
+            <div class="flex gap-4 items-center"> <CircleCheckBig class="text-green-600" size={20}/> <span>Calendario y disponibilidad en tiempo real</span> </div>
+            <div class="flex gap-4 items-center"> <CircleCheckBig class="text-green-600" size={20}/> <span>Recordatorios automáticos, menos ausencias</span> </div>
+            <div class="flex gap-4 items-center"> <CircleCheckBig class="text-green-600" size={20}/> <span>Panel con métricas de tus reservas</span> </div>
+        </div>
+
+        <a href="#" class="text-surface pl-4 pr-4 pb-2 pt-2 bg-primary w-max rounded-md text-center">Registra tu negocio</a>
+
+    </div>
+
+    <div class="bg-surface p-4 rounded-md flex flex-col gap-4 basis-1/2 h-max">
+        <span class="text-secondary-text">Panel del negocio</span>
+
+        <div class="flex gap-4">
+            <div class="flex flex-col bg-gray-200 p-4 rounded-md basis-1/2 w-max">
+                <span class="font-bold text-3xl">18</span>
+                <span class="text-secondary-text">Citas hoy</span>
+            </div>
+
+            <div class="flex flex-col bg-gray-200 p-4 rounded-md basis-1/2 w-max">
+                <span class="font-bold text-3xl text-secondary">92%</span>
+                <span class="text-secondary-text">Ocupación</span>
+            </div>
+        </div>
+
+        <div class="flex items-center p-4 bg-gray-200 rounded-md gap-4">
+            <User class="p-2 bg-primary text-surface rounded-md" size={50}/>
+            <div class="flex flex-col">
+                <span class="font-medium">Mariana G.</span>
+                <span class="text-secondary-text">Corte + color · 13:00</span>
+            </div>
+        </div>
+    </div>
+
+</section>
