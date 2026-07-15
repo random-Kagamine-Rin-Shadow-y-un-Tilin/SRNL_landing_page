@@ -15,4 +15,6 @@ export default defineConfig({
   },
 
   integrations: [icon()],
+   site: "https://random-Kagamine-Rin-Shadow-y-un-Tilin.github.io",
+  base: "/SRNL_landing_page",
 });

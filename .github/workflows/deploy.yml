@@ -1,0 +1,41 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout tu repositorio
+        uses: actions/checkout@v7
+
+      - name: Instalar, construir y subir tu sitio
+        uses: withastro/action@v6
+        # with:
+        #   path: .                    # raíz del proyecto Astro dentro del repo
+        #   node-version: 24
+        #   package-manager: pnpm@latest
+        #   build-cmd: pnpm run build
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+       name: github-pages
+       url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Desplegar a GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v5
